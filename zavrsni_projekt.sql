@@ -2,7 +2,7 @@
 go
 drop database if exists preporucitelj;
 go
-create database preporucitelj;
+create database preporucitelj collate Croatian_CI_AS;
 go
 use preporucitelj;
 
@@ -66,3 +66,31 @@ insert into platforme (naziv) values
 ('Xbox Series X/S'),
 ('Nintendo Switch');
 
+insert into igrice_zanrovi (igrica, zanr) values
+(1,1),(1,2),(1,4),(2,2),(2,3),(2,4),(3,2),(3,4),(4,1),(4,2),(4,4),(4,7),(5,1),
+(5,2),(5,5),(5,4),(6,3),(6,4),(6,1),(7,2),(7,3),(7,1),(8,2),(8,3),(8,4),(9,2),
+(9,1),(9,4),(9,7),(10,9),(10,10),(10,4); 
+
+
+insert into igrice_platforme (igrica, platforma) values
+(1, 1),(1, 2),(1, 4),(1, 6),(2, 1),(2, 2),(2, 4),(3, 1),(3, 2),(3, 3),(3, 4),
+(3, 5),(4, 1),(4, 2),(4, 3),(4, 4),(4, 5),(5, 1),(5, 2),(5, 3),(5, 4),(5, 5),(6, 6),
+(7, 2),(7, 1),(8, 2),(8, 3),(8, 1),(9, 2),(9, 1),(10, 1),(10, 2),(10, 3),(10, 4),(10, 5),(10, 6);
+
+
+-- Broj igara grupirano po žanru
+-- Broj igara grupirano po platformi
+
+
+select a.naziv as naziv_zanra, c.naziv as naziv_igre
+from zanrovi as a
+inner join igrice_zanrovi as b on a.sifra = b.zanr
+inner join igrice as c on b.igrica = c.sifra
+order by a.naziv, c.naziv;
+
+
+select a.naziv as naziv_platforme, c.naziv as naziv_igre
+from platforme as a
+inner join igrice_platforme as b on a.sifra = b.platforma
+inner join igrice as c on b.igrica = c.sifra
+order by a.naziv, c.naziv;
