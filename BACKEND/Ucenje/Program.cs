@@ -3,6 +3,12 @@
 
 using Ucenje;
 
+E10ForEach.Izvedi();
+//E09DoWhile.Izvedi();
+//E08WhilePetlja.Izvedi();
+//E07ForPetlja.Izvedi();
+//E06Zad1.Izvedi(); 
+//E06Nizovi.Izvedi();
 //E05UvjetovanoGrananjeSwitch.Izvodi();
 //E04UvjetovanoGrananjeIf.Izvodi();
 //E03Operatori.Izvodi();
