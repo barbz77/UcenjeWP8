@@ -2,9 +2,11 @@
 
 
 using Ucenje;
+
+E12Metode.Izvedi();
 //E11Z01.Izvedi();
 //E11TryCatch.Izvedi();
-CiklicnaTablica.Izvedi();
+//CiklicnaTablica.Izvedi();
 //E10ForEach.Izvedi();
 //E09DoWhile.Izvedi();
 //E08WhilePetlja.Izvedi();
