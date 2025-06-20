@@ -2,7 +2,10 @@
 
 
 using Ucenje;
-Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
+
+new Ucenje.E15Nasljedjivanje.Program();
+
+//Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
 
 
 
