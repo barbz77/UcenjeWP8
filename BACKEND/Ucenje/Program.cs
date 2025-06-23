@@ -2,8 +2,11 @@
 
 
 using Ucenje;
+//new Ucenje.E17Vjezbanje.Program();
 
-new Ucenje.E15Nasljedjivanje.Program();
+new Ucenje.E16Polimorfizam.Program();
+
+//new Ucenje.E15Nasljedjivanje.Program();
 
 //Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
 
