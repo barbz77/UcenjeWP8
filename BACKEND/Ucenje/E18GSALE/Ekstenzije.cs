@@ -18,4 +18,4 @@ namespace Ucenje.E18GSALE
         }
 
     }
-}s
+}

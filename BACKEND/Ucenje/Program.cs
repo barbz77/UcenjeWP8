@@ -2,9 +2,11 @@
 
 
 using Ucenje;
+new Ucenje.E19KonzolnaAplikacija.Izbornik();
+    
 //new Ucenje.E17Vjezbanje.Program();
 
-new Ucenje.E16Polimorfizam.Program();
+//new Ucenje.E16Polimorfizam.Program();
 
 //new Ucenje.E15Nasljedjivanje.Program();
 
