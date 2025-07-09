@@ -2,7 +2,7 @@
 
 
 using Ucenje;
-new Ucenje.E19KonzolnaAplikacija.Izbornik();
+//new Ucenje.E19KonzolnaAplikacija.Izbornik();
     
 //new Ucenje.E17Vjezbanje.Program();
 
@@ -22,7 +22,7 @@ new Ucenje.E19KonzolnaAplikacija.Izbornik();
 //E12Metode.Izvedi();
 //E11Z01.Izvedi();
 //E11TryCatch.Izvedi();
-//CiklicnaTablica.Izvedi();
+CiklicnaTablica.Izvedi();
 //E10ForEach.Izvedi();
 //E09DoWhile.Izvedi();
 //E08WhilePetlja.Izvedi();
