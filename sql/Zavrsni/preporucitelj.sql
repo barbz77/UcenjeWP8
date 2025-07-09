@@ -10,7 +10,7 @@ create table igrice(
 sifra int not null primary key identity(1,1),
 naziv varchar(100) not null,
 ocjena decimal(3,1) not null,
-godina_izdanja datetime not null
+godinaIzdanja datetime not null
 );
 
 create table zanrovi(
@@ -23,18 +23,18 @@ sifra int not null primary key identity(1,1),
 naziv varchar(100) not null
 );
 
-create table igrice_zanrovi(
+create table igriceZanrovi(
 igrica int not null references igrice(sifra),
 zanr int not null references zanrovi(sifra)
 );
 
-create table igrice_platforme(
+create table igricePlatforme(
 igrica int not null references igrice(sifra),
 platforma int not null references platforme(sifra)
 );
 
 
-insert into igrice (naziv, ocjena, godina_izdanja) values
+insert into igrice (naziv, ocjena, godinaIzdanja) values
 ('The Witcher 3: Wild Hunt', 9.7, '2015-05-19'),
 
 ('Red Dead Redemption 2', 9.7, '2018-10-26'),
@@ -204,7 +204,7 @@ insert into platforme (naziv) values
 ('Nintendo 64'),
 ('GameCube');
 
-insert into igrice_zanrovi (igrica, zanr) values
+insert into igriceZanrovi (igrica, zanr) values
 (1, 1), (1, 2), (1, 3), (2, 4), (2, 3), (3, 4), (3, 3),
 (4, 1), (4, 2), (4, 3), (4, 5), (5, 1), (5, 2), (5, 3), (6, 4), (6, 3),
 (7, 4), (7, 6), (8, 4), (9, 1), (9, 2), (9, 3), (10, 7), (10, 8), (10, 9),
@@ -220,7 +220,7 @@ insert into igrice_zanrovi (igrica, zanr) values
 (48, 4), (48, 10), (48, 22), (49, 10), (49, 4), (50, 16), (50, 10); 
 
 
-insert into igrice_platforme (igrica, platforma) values
+insert into igricePlatforme (igrica, platforma) values
 (1, 1), (1, 2), (1, 3), (1, 6), (2, 2), (2, 3), (2, 1), (3, 7), (3, 8), (3, 2), (3, 3), (3, 1), (3, 4), (3, 5),
 (4, 1), (4, 2), (4, 3), (4, 4), (4, 5), (5, 1), (5, 2), (5, 3), (5, 4), (5, 5), (6, 6), (7, 2), (7, 1),
 (8, 2), (8, 4), (8, 1), (9, 2), (9, 1), (10, 1), (10, 12), (10, 13), (10, 7), (10, 8), (10, 6), (10, 2), (10, 3), (10, 4), (10, 5),
