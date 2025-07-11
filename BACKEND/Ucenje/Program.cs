@@ -12,11 +12,8 @@ using Ucenje;
 
 //Ucenje.E14KlasaObjekt.Program.AutomobilZadatak();
 
-
-
-
 //new Ucenje.E14KlasaObjekt.Program();
-
+//GeneratorLozinki.Izvedi();
 //E11Z02.Izvedi();
 //E13Rekurzija.Izvedi();
 //E12Metode.Izvedi();
