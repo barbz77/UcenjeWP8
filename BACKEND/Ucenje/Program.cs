@@ -3,7 +3,7 @@
 
 using Ucenje;
 //new Ucenje.E19KonzolnaAplikacija.Izbornik();
-    
+
 //new Ucenje.E17Vjezbanje.Program();
 
 //new Ucenje.E16Polimorfizam.Program();
@@ -22,7 +22,8 @@ using Ucenje;
 //E12Metode.Izvedi();
 //E11Z01.Izvedi();
 //E11TryCatch.Izvedi();
-CiklicnaTablica.Izvedi();
+//LjubavniKalkulator.Izvedi();
+//CiklicnaTablica.Izvedi();
 //E10ForEach.Izvedi();
 //E09DoWhile.Izvedi();
 //E08WhilePetlja.Izvedi();
